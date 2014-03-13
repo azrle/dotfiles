@@ -1,0 +1,22 @@
+Bundle 'airblade/vim-gitgutter'
+Bundle 'azrle/vim-easymotion-plus'
+" select indent object (vai, vii)
+Bundle 'austintaylor/vim-indentobject'
+Bundle 'bling/vim-airline'
+Bundle 'gmarik/vundle'
+Bundle 'kien/ctrlp.vim'
+" need ctags
+Bundle 'majutsushi/tagbar'
+Bundle 'msanders/snipmate.vim'
+" <lead>ig
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-bundler'
+Bundle 'tpope/vim-commentary'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'vim-scripts/Align'
+Bundle 'vim-scripts/matchit.zip'
