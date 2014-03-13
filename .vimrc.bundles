@@ -5,7 +5,7 @@ Bundle 'austintaylor/vim-indentobject'
 Bundle 'bling/vim-airline'
 Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
-" need ctags
+" needs ctags
 Bundle 'majutsushi/tagbar'
 Bundle 'msanders/snipmate.vim'
 " <lead>ig

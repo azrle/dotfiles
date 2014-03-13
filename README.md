@@ -1,3 +1,3 @@
 vim +BundleInstall +qall
 
-Note: tagbar need ctags
+Note: tagbar needs ctags
