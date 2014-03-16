@@ -3,4 +3,4 @@
 
 Note: tagbar requires ctags.
 
-Thanks to [square/maximum-awesome](/square/maximum-awesome). Most of plugins are selected from there.
+Thanks to [square/maximum-awesome](https://github.com/square/maximum-awesome). Most of plugins are selected from there.
