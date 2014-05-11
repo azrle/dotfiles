@@ -106,6 +106,7 @@ if !exists("*gettabvar")
 endif
 let g:syntastic_perl_checkers = ['perl']
 let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
+let g:syntastic_enable_perl_checker = 1
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')

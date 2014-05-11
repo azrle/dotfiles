@@ -1,0 +1,13 @@
+escape 
+startup_message off
+defutf8 on
+vbell off
+altscreen on
+
+#Status Bar and Info Bar
+hardstatus on
+hardstatus alwayslastline "%{-b gk}%-w%{+b kg}%50>%n %t%{-b gk}%+w%< %= %{c}%H %{w}%Y-%m-%d %{w}%c:%s"
+# caption always "%{-b gk}%-w%{+b kg}%50>%n %t%{-b gk}%+w%< %= %{y}%1`%{c}@%{m}%H %{w}%D %M %d %{w}%C:%s%a"
+# hardstatus alwayslastline "shortcuts: [C-a] c = new <space> = next <backspace> = previous <shift> a = rename d/r = detach, retach :quit = end session"
+
+
