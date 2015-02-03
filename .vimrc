@@ -48,10 +48,10 @@ set t_Co=16
 set cursorline
 
 " Enable basic mouse behavior such as resizing buffers.
-set mouse=a
-if exists('$TMUX')  " Support resizing in tmux
-  set ttymouse=xterm2
-endif
+" set mouse=a
+" if exists('$TMUX')  " Support resizing in tmux
+"   set ttymouse=xterm2
+" endif
 
 " thanks to http://vimcasts.org/episodes/tidying-whitespace/
 function! <SID>StripTrailingWhitespaces()
