@@ -44,7 +44,7 @@ set tabstop=4                                                " actual tabs occup
 set wildignore=log/**,node_modules/**,target/**,tmp/**,*.rbc
 set wildmenu                                                 " show a navigable menu for tab completion
 set wildmode=longest,list,full
-set t_Co=16
+set t_Co=256
 set cursorline
 
 " Enable basic mouse behavior such as resizing buffers.
@@ -88,16 +88,26 @@ nmap <leader>r :set rnu<CR>
 nmap <leader>b :CtrlPBuffer<CR>
 nmap <leader>d :NERDTreeToggle<CR>
 nmap <leader>f :NERDTreeFind<CR>
-nmap <leader>t :CtrlP<CR>
-nmap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
+nmap <leader>t :CtrlPCurWD<CR>
+nmap <leader>T :CtrlPClearCache<CR>:CtrlPCurWD<CR>
 nmap <leader>] :TagbarToggle<CR>
 nmap <leader>g :GitGutterToggle<CR>
 nmap <leader><space> :call <SID>StripTrailingWhitespaces()<CR>
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
+" molokai color
+let g:molokai_original = 0
+let g:rehash256 = 0
+colorscheme molokai
+if has('gui_running')
+  set guifont=Menlo_Regular:h14
+endif
+
 " plugin settings
 let g:ctrlp_match_window = 'order:ttb,max:20'
+let g:ctrlp_working_path_mode = 'ra'
 let g:NERDSpaceDelims    = 1
+let g:NERDTreeDirArrows  = 0
 let g:gitgutter_enabled  = 0
 let g:indent_guides_guide_size = 1
 " Don't allow gitgutter eager loading if we are using an old version of vim.
@@ -132,7 +142,7 @@ autocmd BufRead,BufNewFile *.md set filetype=markdown
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
 " remove unexpected spaces
-autocmd FileType c,cpp,java,php,perl,html,sql,markdown autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+" autocmd FileType c,cpp,java,php,perl,html,sql,markdown autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
 " Fix Cursor in TMUX
 if exists('$TMUX')
