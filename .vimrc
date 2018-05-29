@@ -117,6 +117,8 @@ endif
 let g:syntastic_perl_checkers = ['perl']
 let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
 let g:syntastic_enable_perl_checker = 1
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+let g:syntastic_python_checkers = ['flake8']
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')

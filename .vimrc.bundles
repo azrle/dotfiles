@@ -22,6 +22,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-scripts/Align'
 Bundle 'vim-scripts/matchit.zip'
-" Bundle 'vim-scripts/AutoComplPop'
+Bundle 'vim-scripts/AutoComplPop'
+Bundle 'Vimjas/vim-python-pep8-indent'
 " Rust
 Bundle 'wting/rust.vim'
